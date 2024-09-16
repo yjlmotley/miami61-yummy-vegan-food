@@ -55,7 +55,7 @@ export const Registration = () => {
 		}
 	}
 	return (
-		<div className="container row">
+		<div className="container d-flex flex-row justify-self-center mt-4">
 			<div className="row align-self-center">
 			</div>
 			<div className="col-md-12 col-lg-6 align-self-center">

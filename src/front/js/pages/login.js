@@ -84,40 +84,38 @@ export const Login = () => {
 	}
 
 	return (
-		<section className="container mb-auto">
-			<div className="container row">
-				<div className="col-md-12 col-lg-6 align-self-center">
-					<h1>Welcome to Yummy Vegan Food!</h1>
-				</div>
-				<div className="col-md-12 col-lg-6">
-					<form className="mb-auto" onSubmit={handleSubmit}>
-						<h1 className="account align-items-center">Log In</h1>
-						<div className="mb-3">
-							<label className="form-label" htmlFor="email">email</label>
-							<input className="form-control" id="email" placeholder="email" value={credentials.email} onChange={handleChange} />
-						</div>
-						<div className="mb-3">
-							<label className="form-label" htmlFor="password">Password</label>
-							<input className="form-control" id="password" type="password" placeholder="password" value={credentials.password} onChange={handleChange} />
-						</div>
-						{/* Editing the following lines out as there are no functions attached to them at this moment. */}
-						{/* <div className="form-check">
+		<div className="container d-flex flex-row justify-self-center mt-4 ">
+			<div className="col-md-12 col-lg-6 align-self-center">
+				<h1>Welcome to Yummy Vegan Food!</h1>
+			</div>
+			<div className="col-md-12 col-lg-6">
+				<form className="mb-auto" onSubmit={handleSubmit}>
+					<h1 className="account align-items-center">Log In</h1>
+					<div className="mb-3">
+						<label className="form-label" htmlFor="email">email</label>
+						<input className="form-control" id="email" placeholder="email" value={credentials.email} onChange={handleChange} />
+					</div>
+					<div className="mb-3">
+						<label className="form-label" htmlFor="password">Password</label>
+						<input className="form-control" id="password" type="password" placeholder="password" value={credentials.password} onChange={handleChange} />
+					</div>
+					{/* Editing the following lines out as there are no functions attached to them at this moment. */}
+					{/* <div className="form-check">
 							<input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
 							<label className="form-check-label" htmlFor="flexCheckChecked">
 								Remember me
 							</label>
 						</div> */}
-						{errMsg && <div className="alert alert-danger" role="alert">{errMsg}</div>}
-						<div className="col-auto d-flex gap-5 align-items-center">
-							<button type="submit" className="btn submitbtn mb-3">Submit</button>
-							<Link to="/forgetpassword">
-								<button type="submit" className="btn submitbtn mb-3">Forgot Password</button>
-							</Link>
-						</div>
-						<Link to="/registration" className="account">Create a new account</Link>
-					</form>
-				</div>
+					{errMsg && <div className="alert alert-danger" role="alert">{errMsg}</div>}
+					<div className="col-auto d-flex gap-5 align-items-center">
+						<button type="submit" className="btn submitbtn mb-3">Submit</button>
+						<Link to="/forgetpassword">
+							<button type="submit" className="btn submitbtn mb-3">Forgot Password</button>
+						</Link>
+					</div>
+					<Link to="/registration" className="account">Create a new account</Link>
+				</form>
 			</div>
-		</section>
+		</div>
 	);
 };

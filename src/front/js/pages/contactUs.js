@@ -71,7 +71,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="container">
+    <section className="container mt-4">
       <form onSubmit={handleSubmit}>
         <h1>Contact Us</h1>
         {errMsg && <p className="text-danger">{errMsg}</p>}
