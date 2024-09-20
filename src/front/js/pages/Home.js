@@ -87,7 +87,7 @@ export const Home = () => {
 				<div className="Vegan-party">
 					<div className="row">
 						<div className="invite">
-							<h2>Discover the exhilarating world of vegan events, where health, sustainability,
+							<h2 className="p-3">Discover the exhilarating world of vegan events, where health, sustainability,
 								and compassion converge! Embark on a journey to vibrant gatherings that celebrate
 								the wonders of plant-based living. Dive into a whirlwind of flavor-packed culinary delights,
 								tantalizing your taste buds with nutrient-rich creations that fuel both body and soul.

@@ -259,7 +259,8 @@ def contactUs():
         return jsonify({"message": "Please give us your comment."}), 400 
     
     email_value = email + "\n\n" + comment
-    send_email("miami612023@gmail.com", email_value, "Comment from the user")
+    # send_email("miami612023@gmail.com", email_value, "Comment from the user")
+    send_email("yummyveganfoods61@gmail.com", email_value, "Comment from the user")
     return jsonify({"message": "Thank you for your comment."}), 200
 
 
